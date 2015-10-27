@@ -25,8 +25,8 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 - Support for SCSS and includes (with minification and sourcemaps), based on [Webpack](https://webpack.github.io)
 - Support for javascript/coffeescript (with minification and sourcemaps), based on [Webpack](https://webpack.github.io)
 - Support for image sprites, based on [Spritesmith](https://github.com/twolfson/gulp.spritesmith)
-- Support for image optimizations [TODO]
 - Automatic available port selection for the web server.
+- Support for image optimizations [TODO]
 
 #### Project layout
 - `Makefile` Shorthands for commands to quickly build or install.
@@ -35,8 +35,8 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 - `templates` The templates used in the html pages (for extend and include).
 - `assets`
 	- `css` CSS and SCSS files and dependents. The top level files get compiled.
-	- `scripts` javascript/coffeescript files and dependents. The top level files get compiled and minified.
-	- `sprites`
+	- `scripts` Javascript/Coffeescript files and dependents. The top level files get compiled and minified.
+	- `sprites` 1x and 2x images get compiled to sprite.png and sprite@2x.png
 	- `static` Just static files like images, fonts and downloads.
 - `package.json` [npm information](https://docs.npmjs.com/files/package.json) about used javascript packages.
 - `.build` Path for the generated site (hidden by default).
@@ -52,6 +52,8 @@ So you can find this structure in `.build` after a make build command.
 - `/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.js.map` Coffee sourcemap
 - `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified
 - `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js.map` Coffee sourcemap
+- `/assets/sprites/exports/icon-arrow.png` ➝ `assets/sprites/sprite.png` Generated image of all png's in the export folder
+- `/assets/sprites/exports/icon-arrow@2x.png` ➝ `assets/sprites/sprite@2x.png` Generated image of all @2x png's in the export folder
 
 
 #### Todo

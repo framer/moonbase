@@ -1,8 +1,5 @@
 @import "components/reset.scss";
 
-@import "../sprites/sprite1x.scss";
-@import "../sprites/sprite2x.scss";
-
 body {
 	font:16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -31,23 +28,28 @@ a {
 }
 
 #docs {
-	position: fixed; 
-	top: 8px; 
+	position: fixed;
+	top: 8px;
 	right: 6px;
-	background: #5badf0; 
+	background: #5badf0;
 	color: #fff;
 	padding: 8px 12px;
-	font-size: 13px; 
-	font-weight: bold; 
+	font-size: 13px;
+	font-weight: bold;
 	line-height: 1.35;
-	border-radius: 3px; 
+	border-radius: 3px;
 	z-index: 100;
 }
 
 #badge {
-	position: absolute; 
-	bottom: 8px; 
+	position: absolute;
+	bottom: 8px;
 	right: 8px;
-	height: 48px; 
+	height: 48px;
 	width: 48px;
 }
+
+// Sprites
+@import "../sprites/sprite.scss";
+@include sprites($spritesheet-sprites);
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @include retina-sprites($retina-groups); }
