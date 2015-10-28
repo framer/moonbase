@@ -36,7 +36,7 @@ From this point you will see something like `Serving at: http://localhost:8000` 
 - `assets`
 	- `css` CSS and SCSS files and dependents. The top level files get compiled.
 	- `scripts` Javascript/Coffeescript files and dependents. The top level files get compiled and minified.
-	- `sprites` 1x and 2x images get compiled to sprite.png and sprite@2x.png
+	- `sprites` 1x and 2x images get compiled to `sprite.png` and `sprite@2x.png`
 	- `static` Just static files like images, fonts and downloads.
 - `package.json` [npm information](https://docs.npmjs.com/files/package.json) about used javascript packages.
 - `.build` Path for the generated site (hidden by default).
@@ -50,10 +50,10 @@ So you can find this structure in `.build` after a make build command.
 - `/assets/css/style.scss` ➝ `/assets/css/style.css` SCSS compiled
 - `/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.js` Coffee compiled and minified
 - `/assets/scripts/main.coffee` ➝ `/assets/scripts/main.coffee.js.map` Coffee sourcemap
-- `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript minified
-- `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js.map` Coffee sourcemap
-- `/assets/sprites/exports/icon-arrow.png` ➝ `assets/sprites/sprite.png` Generated image of all png's in the export folder
-- `/assets/sprites/exports/icon-arrow@2x.png` ➝ `assets/sprites/sprite@2x.png` Generated image of all @2x png's in the export folder
+- `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js` JavaScript compiled and minified
+- `/assets/scripts/tracker.js` ➝ `/assets/scripts/tracker.js.map` JavaScript sourcemap
+- `/assets/sprites/exports/icon-arrow.png` ➝ `assets/sprites/sprite.png` Generated sprite image
+- `/assets/sprites/exports/icon-arrow@2x.png` ➝ `assets/sprites/sprite@2x.png` Generated @2x sprite image
 
 
 #### Todo
