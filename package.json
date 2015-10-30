@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/motif/MoonbaseTemplate",
   "dependencies": {
-    "moonbase": "^1.1.3"
+    "moonbase": "^1.1.5"
   }
 }
